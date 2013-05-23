@@ -1,8 +1,8 @@
 /* Major thanks to Peter Simonyi for this amazing piece of CSS */
-@media (min-width: 600px) {
+@media (min-width: 800px) {
 	main {
 /* Width of <main> is the width of the text block plus the two margins */
-		max-width: calc(45rem + 2 * 9rem);
+		max-width: calc(35rem + 2 * 9rem);
 	}
 	p { 
 /* These margin widths are the width of the margin notes plus the width of
@@ -17,11 +17,15 @@
 		margin: 0;
 	}
 }
+@media (max-width: 800px) {
+	main {
+		max-width: 35rem;
+	}
+}
 main {
     margin-left: auto;
     margin-right: auto;
 }
-
 /* Just pretty stuff */
 h1, h2 {
     text-align: center;
@@ -31,6 +35,10 @@ h3 {
     font-style: italic;
     font-weight: normal;
 }
-p { 
+p {
+	text-align: justify;
+	text-justify: inter-word;
+	font-size: 1.1em;
+	line-height: 1.3em;
     margin-bottom: 2em;
 }
