@@ -1,0 +1,36 @@
+/* Major thanks to Peter Simonyi for this amazing piece of CSS */
+@media (min-width: 600px) {
+	main {
+/* Width of <main> is the width of the text block plus the two margins */
+		max-width: calc(45rem + 2 * 9rem);
+	}
+	p { 
+/* These margin widths are the width of the margin notes plus the width of
+   the gutter. (margin-right, since it doesn't contain text, doesn't matter. */
+		margin-left: 9rem;
+		margin-right: 9rem;
+	}
+	h3 {
+		text-align: right;
+		width: 8rem;
+		float: left;
+		margin: 0;
+	}
+}
+main {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Just pretty stuff */
+h1, h2 {
+    text-align: center;
+}
+h3 {
+    font-size: 0.8em;
+    font-style: italic;
+    font-weight: normal;
+}
+p { 
+    margin-bottom: 2em;
+}
