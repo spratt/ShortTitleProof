@@ -3,42 +3,8 @@
 <head>
 <meta charset="utf-8">
 <title>Short Title Proof of Concept</title>
-<style type="text/css">
-/* Major thanks to Peter Simonyi for this amazing piece of CSS */
-/* Styles for layout */
-main {
-    margin-left: auto;
-    margin-right: auto;
-    /* Width of <main> is the width of the text block plus the two margins */
-    max-width: calc(45rem + 2 * 9rem);
-    min-width: 60em;
-}
-p { 
-    /* These margin widths are the width of the margin notes plus the width of
-    the gutter. (margin-right, since it doesn't contain text, doesn't matter. */
-    margin-left: 9rem;
-    margin-right: 9rem;
-}
-h3 {
-    width: 8rem;
-    float: left;
-    margin: 0;
-}
-
-/* Just pretty stuff */
-h1, h2 {
-    text-align: center;
-}
-h3 {
-    font-size: 0.8em;
-    text-align: right;
-    font-style: italic;
-    font-weight: normal;
-}
-p { 
-    margin-bottom: 2em;
-}
-</style>
+<link rel="stylesheet" href="small.css" />
+<link rel="stylesheet" media="(min-width: 600px)" href="big.css" />
 </head>
 <body>
 <main>
