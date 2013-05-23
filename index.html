@@ -1,32 +1,51 @@
+<!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8">
 <title>Short Title Proof of Concept</title>
 <style type="text/css">
-h1, h2 {
-  text-align: center;
+/* Major thanks to Peter Simonyi for this amazing piece of CSS */
+/* Styles for layout */
+main {
+    margin-left: auto;
+    margin-right: auto;
+    /* Width of <main> is the width of the text block plus the two margins */
+    max-width: calc(45rem + 2 * 9rem);
+    min-width: 60em;
 }
 p { 
-  position: relative;
-  margin: 0 auto;
-  width: 45em;
-  margin-bottom: 2em;
+    /* These margin widths are the width of the margin notes plus the width of
+    the gutter. (margin-right, since it doesn't contain text, doesn't matter. */
+    margin-left: 9rem;
+    margin-right: 9rem;
 }
-.short-title {
-  font-size: 0.8em;
-  text-align: center;
-  font-style: italic;
-  position: absolute; 
-  left: -11em;
-  width: 10em;
+h3 {
+    width: 8rem;
+    float: left;
+    margin: 0;
+}
+
+/* Just pretty stuff */
+h1, h2 {
+    text-align: center;
+}
+h3 {
+    font-size: 0.8em;
+    text-align: right;
+    font-style: italic;
+    font-weight: normal;
+}
+p { 
+    margin-bottom: 2em;
 }
 </style>
 </head>
 <body>
+<main>
 <h1>Short Title Proof of Concept</h1>
 <h2>First Section</h2>
+<h3>Short Title for the first paragraph</h3>
 <p>
-<span class="short-title">Short Title for the first paragraph</span>
-
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam
 lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam
 viverra nec consectetur ante hendrerit. Donec et mollis
@@ -42,11 +61,10 @@ accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at
 malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis
 parturient montes, nascetur ridiculus mus. In rutrum accumsan
 ultricies. Mauris vitae nisi at sem facilisis semper ac in est.
-
 </p>
-<p>
-<span class="short-title">Short Title for the second paragraph</span>
 
+<h3>Short Title for the second paragraph</h3>
+<p>
 Vivamus fermentum semper porta. Nunc diam velit, adipiscing ut
 tristique vitae, sagittis vel odio. Maecenas convallis ullamcorper
 ultricies. Curabitur ornare, ligula semper consectetur sagittis, nisi
@@ -62,19 +80,17 @@ massa ipsum. Quisque bibendum purus convallis nulla ultrices
 ultricies. Nullam aliquam, mi eu aliquam tincidunt, purus velit
 laoreet tortor, viverra pretium nisi quam vitae mi. Fusce vel volutpat
 elit. Nam sagittis nisi dui.
-
 </p>
-<h2>Second Section</h2>
-<p>
-<span class="short-title">Short Title for the third paragraph</span>
 
+<h2>Second Section</h2>
+<h3>Short Title for the third paragraph</h3>
+<p>
 Suspendisse lectus leo, consectetur in tempor sit amet, placerat quis
 neque.
-
 </p>
-<p>
-<span class="short-title">Short Title for the fourth paragraph</span>
 
+<h3>Short Title for the fourth paragraph</h3>
+<p>
 Class aptent taciti sociosqu ad litora torquent per conubia nostra,
 per inceptos himenaeos. In euismod ultrices facilisis. Vestibulum
 porta sapien adipiscing augue congue id pretium lectus molestie. Proin
@@ -85,7 +101,7 @@ ut. Sed non tortor sodales quam auctor elementum. Donec hendrerit nunc
 eget elit pharetra pulvinar. Suspendisse id tempus tortor. Aenean
 luctus, elit commodo laoreet commodo, justo nisi consequat massa, sed
 vulputate quam urna quis eros. Donec vel.
-
 </p>
+</main>
 </body>
 </html>
