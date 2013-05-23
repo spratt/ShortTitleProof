@@ -16,7 +16,7 @@
 		margin: 0;
 	}
 }
-@media (max-width: 800px) {
+@media (max-width: 799px) {
 	main {
 		max-width: 35rem;
 	}
